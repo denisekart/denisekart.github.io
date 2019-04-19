@@ -43,7 +43,7 @@ Task("Clean")
             Information($"Ignoring directory {i}");
          else{
             Information($"Deleting directory {i}");
-            //DeleteDirectory(i,new DeleteDirectorySettings{Recursive=true});
+            DeleteDirectory(i,new DeleteDirectorySettings{Recursive=true});
          }
       }
       foreach(var i in files){
@@ -52,7 +52,7 @@ Task("Clean")
             Information($"Ignoring file {i}");
          else{
             Information($"Deleting file {i}");
-            //DeleteFile(i);
+            DeleteFile(i);
          }
       }
    });
