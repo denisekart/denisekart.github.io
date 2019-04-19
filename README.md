@@ -1,2 +1,5 @@
+---
+permalink: /index.html
+---
+
 # denisekart.github.io
-Personal page repo
