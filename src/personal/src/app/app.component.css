@@ -16,7 +16,7 @@ button.expandible-accented{
 }
 
 button.expandible-default{
-   min-width: 140px;
+   min-width: 60px;
    text-align: start;
 }
 
@@ -36,10 +36,10 @@ button.expandible-default{
 }
 
   button.on-hover span{
-   -webkit-transition: all 1s ease-in-out;
-   -moz-transition: all 1s ease-in-out;
-   -o-transition: all 1s ease-in-out;
-   transition: all 1s ease-in-out;
+   -webkit-transition: all 1.5s ease-in-out;
+   -moz-transition: all 1.5s ease-in-out;
+   -o-transition: all 1.5s ease-in-out;
+   transition: all 1.5s ease-in-out;
   }
 
   button.on-hover:hover span{
@@ -49,3 +49,24 @@ button.expandible-default{
    transition: all .5s ease-in-out;
   }
 
+  .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: var(--color-contrast);
+   font-weight: lighter;
+   font-size: 90%;
+   text-align: center;
+ }
+
+ .footer:hover {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: var(--color-accent);
+   font-weight: lighter;
+   font-size: 100%;
+   text-align: center;
+ }

@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  public myAge:number;
+  constructor() { 
+    this.myAge=(new Date().getFullYear()-new Date(1991,12,31).getFullYear());
+  }
 
   ngOnInit() {
   }

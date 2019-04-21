@@ -1,0 +1,100 @@
+img.relative-size{
+    width: 100%;
+    
+}
+
+.wrapper-tight{
+    /* border: 1px solid black; */
+    max-width: 90%;
+    width:90%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: block;
+}
+
+div.focusable{
+    margin: auto;
+    padding-right: 60px;
+    float: right;
+    width: 30%;
+    max-width: 300px;
+}
+
+.focusable img{
+    display: block;
+    filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+  border-radius: 50%;
+  -webkit-transform: scale(1);  /* Chrome, Opera 15+, Safari 3.1+ */
+  -ms-transform: scale(1);  /* IE 9 */
+    transform: scale(1);  /* Firefox 16+, IE 10+, Opera */
+    
+}
+
+.focusable:hover img{
+    display: block;
+    -webkit-filter: grayscale(0);
+    filter: none;
+    border-radius: 50%;
+    -webkit-transform: scale(1.2);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: scale(1.2);  /* IE 9 */
+    transform: scale(1.2);  /* Firefox 16+, IE 10+, Opera */
+}
+
+
+div.table{
+    width: auto;
+    margin: auto;
+    margin-left: 40px;
+    display: inline-block;
+    margin-top:20px;
+}
+div.table-row{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+div.table-header{
+    text-align: right;
+    display: inline-block;
+    min-width: 100px;
+    font-weight: 500;   
+}
+div.table-content{
+    text-align: left;
+    display: inline-block;
+    margin-left: 20px;
+    max-width: 200px;
+}
+
+
+.focusable-content span{
+    filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+  -webkit-transform: scale(1);  /* Chrome, Opera 15+, Safari 3.1+ */
+  -ms-transform: scale(1);  /* IE 9 */
+    transform: scale(1);  /* Firefox 16+, IE 10+, Opera */
+    
+}
+
+.focusable-content:hover span{
+    -webkit-filter: grayscale(0);
+    filter: none;
+    -webkit-transform: scale(1.1);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: scale(1.1);  /* IE 9 */
+    transform: scale(1.1);  /* Firefox 16+, IE 10+, Opera */
+    font-weight: 400;
+}
+
+span.focusable-initials{
+    font-weight: normal;
+    color: var(--color-accent);
+}
+
+
+span.focusable-text{
+    font-weight: normal;
+    color: var(--color-contrast);
+}
