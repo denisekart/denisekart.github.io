@@ -49,6 +49,9 @@ button.expandible-default{
    transition: all .5s ease-in-out;
   }
 
+  .footer p{
+     padding-right: 20px;
+  }
   .footer {
    position: fixed;
    left: 0;
@@ -57,7 +60,7 @@ button.expandible-default{
    color: var(--color-contrast);
    font-weight: lighter;
    font-size: 90%;
-   text-align: center;
+   text-align: right;
  }
 
  .footer:hover {
@@ -68,5 +71,5 @@ button.expandible-default{
    color: var(--color-accent);
    font-weight: lighter;
    font-size: 100%;
-   text-align: center;
+   text-align: right;
  }
