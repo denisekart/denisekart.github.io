@@ -90,6 +90,8 @@ Task("Publish")
    .Does(()=>{
       Information("Publishing app to root...");
       CopyFiles(output.Build()+"/../dist/*",output.Build()+"/../",true);
+      CreateDirectory(output.Build()+"/../assets");
+      CopyDirectory(output.Build()+"/../dist/assets",output.Build()+"/../assets");
    });
 
 
