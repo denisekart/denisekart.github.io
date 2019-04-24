@@ -242,3 +242,43 @@ svg {
   flex-direction: row;
   width: 100%;
 }
+
+
+
+
+div.focusable{
+  margin: auto;
+  margin-left: -20px;
+  margin-top: -20px;
+  // display: block;
+  float: left;
+  width: 20%;
+  max-width: 300px;
+}
+
+.focusable img{
+  display: block;
+  filter: gray; /* IE6-9 */
+-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+border-radius: 2%;
+-webkit-transform: scale(1);  /* Chrome, Opera 15+, Safari 3.1+ */
+-ms-transform: scale(1);  /* IE 9 */
+  transform: scale(1);  /* Firefox 16+, IE 10+, Opera */
+  
+}
+
+.focusable:hover img{
+  display: block;
+  -webkit-filter: grayscale(0);
+  filter: none;
+  border-radius: 2%;
+  -webkit-transform: scale(1.25);  /* Chrome, Opera 15+, Safari 3.1+ */
+  -ms-transform: scale(1.25);  /* IE 9 */
+  transform: scale(1.25);  /* Firefox 16+, IE 10+, Opera */
+}
+
+img.relative-size{
+  width: 100%;
+  
+}
