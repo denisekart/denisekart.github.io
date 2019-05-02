@@ -12,6 +12,10 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import { GithubComponent } from './components/github/github.component';
 import { ResumeComponent } from './components/resume/resume.component';
+import { StaticResumeComponent } from './components/static-resume/static-resume.component';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+// import { saveAs } from 'file-saver';
 // import {MatDividerModule} from '@angular/material/divider';
 
 @NgModule({
@@ -19,16 +23,19 @@ import { ResumeComponent } from './components/resume/resume.component';
     AppComponent,
     HomeComponent,
     GithubComponent,
-    ResumeComponent
+    ResumeComponent,
+    StaticResumeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatButtonToggleModule,
     // MatSidenavModule,
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
+    PdfViewerModule
     // MatDividerModule
   ],
   providers: [],
